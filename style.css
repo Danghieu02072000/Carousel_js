@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #343f4f;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+.wrapper {
+    max-width: 1200px;
+    position: relative;
+}
+.carousel {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.img-carousel {
+    width: calc(100% / 3 );
+    height: 350px;
+    object-fit: cover;
+    margin-left: 12px;
+}
+.img-carousel:first-child {
+    margin-left: 0;
+}
+.wrapper i{
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.wrapper i:first-child {
+    left: -24px;
+}
+    
+.wrapper i:last-child {
+    right:-24px;
+}
