@@ -17,9 +17,17 @@ body {
     position: relative;
     padding : 0 30px;
 }
+.wrapper i:first-child {
+    display: none;
+}
 .carousel {
     white-space: nowrap;
     overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel.dragging {
+    scroll-behavior: auto;
+    cursor: grab;
 }
 .img-carousel {
     width: calc(100% / 3 );
