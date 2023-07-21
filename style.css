@@ -15,6 +15,7 @@ body {
 .wrapper {
     max-width: 1200px;
     position: relative;
+    padding : 0 30px;
 }
 .carousel {
     white-space: nowrap;
@@ -42,9 +43,21 @@ body {
     transform: translateY(-50%);
 }
 .wrapper i:first-child {
-    left: -24px;
+    left: 4px;
 }
     
 .wrapper i:last-child {
-    right:-24px;
+    right: 4px;
+}
+
+
+@media (max-width: 900px) {
+    .img-carousel {
+        width: calc(100% / 2);
+    }
+}
+@media (max-width: 450px) {
+    .img-carousel {
+        width: 100%;
+    }
 }
